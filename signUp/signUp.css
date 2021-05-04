@@ -40,12 +40,16 @@
 
 #signUpButton {
     width:315px;
-    background-color: rgba(44, 44, 238, 0.74);
+    background-color: rgba(30, 30, 236, 0.363);
     color: white;
     padding-top:10px;
     padding-bottom: 10px;
     margin-top: 15px;
     border:none;
+}
+
+#signUpButton:hover{ /*버튼 색변화*/
+    background-color: rgba(30, 30, 236, 0.856);
 }
 
 .instagramText {

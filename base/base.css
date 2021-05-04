@@ -6,7 +6,7 @@ header{
     display:flex;
     padding: 10px 0 10px 0;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; /*요소 사이 공간생성*/
 }
 
 .left_box{
@@ -23,7 +23,11 @@ header{
     
 }
 
-img{
+.right_box img{
+    height:22px;
+}
+
+.left_box img{
     height:25px;
 }
 .line img{

@@ -23,7 +23,7 @@
 
 #loginButton {
     width:315px;
-    background-color: rgba(44, 44, 238, 0.74);
+    background-color: rgba(30, 30, 236, 0.363);
     color: white;
     padding-top:10px;
     padding-bottom: 10px;
@@ -31,8 +31,12 @@
     border:none;
 }
 
-.instagramText {
-    width: 210px;
+#loginButton:hover{
+    background-color: rgba(30, 30, 236, 0.856);
+}
+
+.instagramText{
+    width:200px;
     padding-bottom: 60px;
 }
 
