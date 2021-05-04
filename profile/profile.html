@@ -1,56 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <link href="profile.css" rel="stylesheet" type="text/css"/>
     <title>Instagram</title>
-    <link rel="icon" href="../img/icon.png">
-    
-    </div>
+	<link rel="icon" href="../img/icon.png">
 </head>
 <body>
-    <header>
-        <div>
-            <div><button type="button"><img src="../img/ssu_likelion_logo_150x150.png" alt="no logo img"></button></div>
-            <div>
-               <h1>LikeLionSSU</h1> <button type="button">프로필 편집</button>
-            </div>
-            <div><ul>
-                <li>000 게시물</li>
-                <li>000 팔로워</li>
-                <li>000 팔로잉</li>
-            </ul></div>
-            <div>
-               <P>hello world!</P>
-            </div>
-    </header>
-    <div class="main">
-        <div>
-            <img src="../img/lionface.png" alt="no face image">
-         <div>
-            <ul>
-                <li aria-hidden="true">Likes: 0</li>
-                <li aria-hidden="true">Comments: 0</li>
-            </ul>
-         </div>
+<header>
+	<div class="container">
+			<div class="profileImg">
+                <button class="imgbtn" title="프로필 사진 바꾸기">
+				<img src="../img/ssu_likelion_logo_150x150.png" alt="">
+            	</button>
+			</div>
+        <div class="profile">
+			<div class="profileUserSetting">
+				<h1 class="profileUserName">LikeLionSSU</h1>
+				<button class="profileEdit">프로필 편집</button>
+			</div>
+
+			<div class="profileStats">
+				<ul>
+					<li><span class="profileStatsNum">000</span> 게시물</li>
+					<li><span class="profileStatsNum">000</span> 팔로워</li>
+					<li><span class="profileStatsNum">000</span> 팔로잉</li>
+				</ul>
+			</div>
+
+			<div class="profileIntro">
+				<p class="profileIntroduce">hello world✈️</p>
+		    </div>
         </div>
-        <div>
-            <img src="../img/lionface.png" alt="no face image">
-        </div>
-        <div>
-            <ul>
-                <li aria-hidden="true">Likes: 0</li>
-                <li aria-hidden="true">Comments: 0</li>
-            </ul>
-        </div>
-        <div>
-            <img src="../img/lionface.png" alt="no face image">
-        </div>
-        <div>
-            <ul>
-                <li aria-hidden="true">Likes: 0</li>
-                <li aria-hidden="true">Comments: 0</li>
-            </ul>
-        </div>
-    </div>
+		<!-- End of profile section -->
+	</div>
+	<!-- End of container -->
+</header>
+
+<main>
+	<div class="galleryContainer">
+		<div class="gallery">
+			<div class="galleryPicture" tabindex="0">
+				<img src="../img/lionface.png" class="galleryImg" alt="">
+				<div class="galleryPictureInfo">
+					<ul>
+						<li class="galleryPictureLikes"><span class="visualHiddenInfo">Likes:</span><i class="heart" aria-hidden="true"></i> 0</li>
+						<li class="galleryPictureComments"><span class="visualHiddenInfo">Comments:</span><i class="comment" aria-hidden="true"></i> 0</li>
+					</ul>
+				</div>
+			</div>
+			<div class="galleryPicture" tabindex="0">
+				<img src="../img/lionface.png" class="galleryImg" alt="">
+				<div class="galleryPictureInfo">
+					<ul>
+						<li class="galleryPictureLikes"><span class="visualHiddenInfo">Likes:</span><i class="heart" aria-hidden="true"></i> 0</li>
+						<li class="galleryPictureComments"><span class="visualHiddenInfo">Comments:</span><i class="comment" aria-hidden="true"></i> 0</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="galleryPicture" tabindex="0">
+				<img src="../img/lionface.png" class="galleryImg" alt="">
+				<div class="galleryPictureInfo">
+					<ul>
+						<li class="galleryPictureLikes"><span class="visualHiddenInfo">Likes:</span><i class="heart" aria-hidden="true"></i> 0</li>
+						<li class="galleryPictureComments"><span class="visualHiddenInfo">Comments:</span><i class="comment" aria-hidden="true"></i> 0</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- End of gallery -->
+	</div>
+	<!-- End of container -->
+</main>
 </body>
 </html>
