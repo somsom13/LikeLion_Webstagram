@@ -7,7 +7,6 @@
 {% block content %}
 <form action="{% url 'create' %}" method="post" enctype="multipart/form-data">
     {%csrf_token%}
-    <p>작성자 : <input type="text" name="writer" value="{{post.author}}"></p>
     <p>사진 : <input type="file" name="image" value = "{{post.image}}"></p>
     <button type="submit"> submit</button>
 </form>

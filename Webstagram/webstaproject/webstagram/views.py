@@ -38,7 +38,6 @@ def update(request,id):
 def create(request):
     #나중에 해당 글 만 보여주는 걸로 바꾸기
     writepost=Content()
-    writepost.author=request.POST['writer']
     writepost.image=request.FILES['image']
     writepost.save()
     return redirect('profile')
