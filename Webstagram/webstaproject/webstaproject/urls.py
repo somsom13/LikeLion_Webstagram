@@ -22,14 +22,14 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',websta.profile,name='profile'),
+    path('',acc.login_user,name='login'),
     path('feed/<str:id>',websta.feed,name='feed'),
     path('edit/<str:id>',websta.edit,name='edit'),
     path('delete/<str:id>',websta.delete,name='delete'),
     path('create/',websta.create,name='create'),
     path('new/',websta.new,name='new'),
     path('update/<str:id>',websta.update,name='update'),
-    path('login/',acc.login_user,name='login'),
+    path('profile/<int:author_id>',websta.profile,name='profile'),
     path('logout/',acc.logout_user,name='logout'),
     path('signUp/',acc.signUp,name='signUp'),
 ]+static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)

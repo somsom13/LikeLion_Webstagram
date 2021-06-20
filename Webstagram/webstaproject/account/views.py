@@ -12,7 +12,9 @@ def login_user(request):
        if user is not None:
            #login 가능
            login(request,user)
-           return redirect('profile')
+           print("user id: ")
+           print(user.id)
+           return redirect('profile',author_id=user.id)
     else:
         return render(request,'login.html')
     
@@ -27,7 +29,7 @@ def signUp(request):
         new_user=User.objects.create_user(email=email,username=username,password=password)
         new_user.save()
         login(request,new_user)
-        return render(request,'profile',{'message':'signUp success!'})
+        return redirect('profile',author_id=new_user.id)
         
     else:
         return render(request,'signUp.html')

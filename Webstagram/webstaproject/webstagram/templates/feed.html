@@ -18,7 +18,7 @@
             <!--posts model 모든 객체들  나중에 profile에서 선택하면 그 post만 보여주게 바꾸자-->
             <div class="cardView">
                 <header>
-                    <div class="userNickName">LikeLionSSU</div>
+                    <div class="userNickName">{{post.author.username}}</div>
                 </header>
                 <div class="cardImage">
                     <img src="{{post.image.url}}" alt="sample">

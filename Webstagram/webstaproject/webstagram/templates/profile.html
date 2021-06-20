@@ -2,7 +2,6 @@
 <!DOCTYPE html>
 <html>
 	
-	
     <meta charset="UTF-8">
 	{% load static %}
     <link href="{% static 'css/profile.css' %}" rel="stylesheet" type="text/css"/>
@@ -22,7 +21,7 @@
 			</div>
         <div class="profile">
 			<div class="profileUserSetting">
-				<h1 class="profileUserName">LikeLionSSU</h1>
+				<h1 class="profileUserName">{{author.username}}</h1>
 				<button class="profileEdit">프로필 편집</button>
 			</div>
 
